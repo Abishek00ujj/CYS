@@ -21,7 +21,7 @@ const Root = () => {
             View  unknown login attempts
           </button>
         </Link>
-        <Link to="/login">
+        <Link to="/adduser">
           <button className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition duration-300">
             ADD USERS
           </button>

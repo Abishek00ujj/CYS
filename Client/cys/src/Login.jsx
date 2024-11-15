@@ -17,7 +17,7 @@ const Login = () => {
     <>
     <ToastContainer/>
     <div className='w-screen h-screen bg-black flex justify-center items-center'>
-          <div className='w-[500px] h-[400px] bg-blue-400 rounded-3xl'>
+          <div className='w-[400px] h-[400px] bg-blue-400 rounded-3xl'>
             <div className='w-full flex justify-center items-center font-mono text-3xl m-1'>LOGIN</div>
             <div className='w-full h-full flex flex-col justify-center items-center'>
                 <input ref={emailref} type="" name="" id="" className='w-[80%] p-5 rounded-2xl border border-black m-5' placeholder='EMAIL'/>
