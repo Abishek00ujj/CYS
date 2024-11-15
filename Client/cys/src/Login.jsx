@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useRef } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,12 +7,23 @@ const Login = () => {
     const emailref=useRef(null);
     const passwordref=useRef(null);
     const HandleLogin=()=>{
-        notify("Succesful");
          const obj={
             email:emailref.current.value,
             password:passwordref.current.value
          }
-         console.log(obj); 
+         sendData(obj);
+    }
+    const sendData=async(obj)=>{
+      try{
+        const res=await axios.post("http://localhost:1999/api/v1/login",{email:obj.email,password:obj.password});
+        const notify=(message)=>toast.success(message);
+        notify(res.data.message);
+      }
+      catch(err)
+      {
+        const notify=(message)=>toast.error(message);
+        notify("Invalid credentials!");
+      }
     }
   return (
     <>

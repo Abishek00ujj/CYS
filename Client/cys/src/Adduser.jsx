@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 import { useRef } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,22 +9,32 @@ const Adduser = () => {
     const [getuserdata,setuserdata]=useState(false);
     const emailref=useRef(null);
     const passwordref=useRef(null);
-    let Datu=0;
     const Handleadduser=()=>{
-        notify("user added successfully!");
          const obj={
             email:emailref.current.value,
             password:passwordref.current.value
          }
          setuserdata(obj);
-         console.log(getuserdata)
+         sendData(obj);
          setdata(true);
-        //  console.log(obj); 
+    }
+    const sendData=async(obj)=>{
+      try{
+        const res=await axios.post("http://localhost:1999/api/v1/adduser",{email:obj.email,password:obj.password});
+        notify(res.data.message);
+        emailref.current.value="";
+        passwordref.current.value="";
+      }
+      catch(err)
+      {
+        const notifyError=(message)=>toast.error(message);
+        notifyError("User already exists!");
+      }
     }
   return (
     <>
     <ToastContainer/>
-       <div className='w-screen h-screen bg-slate-400 flex justify-center items-center'>
+       <div className='w-screen h-screen bg-slate-200 flex justify-center items-center'>
             <div className='flex flex-col w-[400px] h-[400px] space-y-5 '>
                 <p className='text-2xl'>ADD USER</p>
                  <input ref={emailref} type="text" className='border border-black p-3 rounded-xl' placeholder='Email'/>
@@ -32,7 +43,8 @@ const Adduser = () => {
                  <div className=''>
             {
               getdata&&(
-                <div className='w-[400px] h-[200px]'>
+                <div className='w-[400px] h-[200px] justify-center flex flex-col'>
+                   <p className='text-2xl text-green-400'>created user!</p>
                     <table className='border border-black'>
                         <thead className='border border-black'>
                         <tr className=''>

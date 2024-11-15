@@ -16,7 +16,7 @@ const Root = () => {
             LOGIN
           </button>
         </Link>
-        <Link to="/login">
+        <Link to="/unknowlist">
           <button className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition duration-300">
             View  unknown login attempts
           </button>
@@ -26,7 +26,7 @@ const Root = () => {
             ADD USERS
           </button>
         </Link>
-        <Link to="/login">
+        <Link to="/allusers">
           <button className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition duration-300">
             VIEW ALL USERS
           </button>
