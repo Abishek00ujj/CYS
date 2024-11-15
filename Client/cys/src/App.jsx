@@ -1,19 +1,19 @@
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Login from "./Login"
-
+import Root from './Root'
 function App() {
   
 
   return (
     <>
-      {/* <BrowserRouter>
+      <BrowserRouter>
           <Routes>
             <Route path={"/"} element={<Root/>}/>
             <Route path={"/login"} element={<Login/>}/>
           </Routes>
-      </BrowserRouter> */}
-      <Login/>
+      </BrowserRouter>
+
     </>
   )
 }
