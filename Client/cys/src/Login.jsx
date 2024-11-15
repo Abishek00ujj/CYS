@@ -15,7 +15,7 @@ const Login = () => {
     }
     const sendData=async(obj)=>{
       try{
-        const res=await axios.post("http://localhost:1999/api/v1/login",{email:obj.email,password:obj.password});
+        const res=await axios.post("https://cys.onrender.com/api/v1/login",{email:obj.email,password:obj.password});
         const notify=(message)=>toast.success(message);
         notify(res.data.message);
       }

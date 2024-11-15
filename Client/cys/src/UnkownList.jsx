@@ -9,7 +9,7 @@ const unknownList = () => {
     useEffect(() => {
         const FetchData = async () => {
             try {
-                const res = await axios.get("http://localhost:1999/api/v1/getInvalid");
+                const res = await axios.get("https://cys.onrender.com/api/v1/getInvalid");
                 setUsers(res.data.data); 
                 console.log(users.length);
                 setLoading(false);
