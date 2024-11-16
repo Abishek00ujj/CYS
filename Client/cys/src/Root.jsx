@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Footer from './Footer'
 const Root = () => {
   return (
     <div className="w-screen h-screen bg-cover bg-center" id="bg1">
@@ -33,6 +33,7 @@ const Root = () => {
         </Link>
         </div>  
       </div>
+     < Footer/>
     </div>
   );
 };
