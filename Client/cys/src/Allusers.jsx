@@ -24,7 +24,7 @@ const Allusers = () => {
     if (loading) {
         return (
             <div className="w-screen h-screen flex justify-center items-center">
-                <div className="">
+                <div className="animate-spin">
                     <Loader2 />
                 </div>
             </div>
@@ -37,7 +37,7 @@ const Allusers = () => {
         <div className="w-screen min-h-screen bg-slate-300">
             <p className="text-3xl text-center py-5">ALL USERS</p>
             <p className="text-2xl text-center text-blue-500 mb-5">Total users: {users.length}</p>
-            <div className="w-full flex justify-center items-center animate-spin">
+            <div className="w-full flex justify-center items-center">
                 <table className="w-3/4 border border-black bg-white">
                     <thead>
                         <tr className="border border-black bg-gray-200">
