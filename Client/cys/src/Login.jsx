@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useRef } from 'react'
+import Footer from './Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
@@ -38,6 +39,7 @@ const Login = () => {
             </div>
           </div>
     </div>
+    <Footer/>
     </>
   )
 }

@@ -4,6 +4,8 @@ import Login from "./Login"
 import Root from './Root'
 import Allusers from './Allusers';
 import UnknownList from './UnkownList';
+import Admin from './Admin'
+import Adminlogin from './Adminlogin'
 function App() {
   
 
@@ -16,6 +18,8 @@ function App() {
             <Route path={"/adduser"} element={<Adduser/>}/>
             <Route path={"/allusers"} element={<Allusers/>}/>
             <Route path={"/unknowlist"} element={<UnknownList/>}/>
+            <Route path={"/admin"} element={<Admin/>}/>
+            <Route path={"/adminlogin"} element={<Adminlogin/>}/>
           </Routes>
       </BrowserRouter>
 
