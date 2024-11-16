@@ -5,7 +5,7 @@ const Footer = () => {
     <>
     <div className='w-screen bg-black p-5'>
          <p className='font-mono text-center
-          text-white'>Design & Developed by JANAKI & TEAM</p>
+          text-white'>Design & Developed by Team Pretty petals</p>
     </div>
     </>
   )
