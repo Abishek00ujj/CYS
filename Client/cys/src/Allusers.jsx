@@ -24,7 +24,7 @@ const Allusers = () => {
     if (loading) {
         return (
             <div className="w-screen h-screen flex justify-center items-center">
-                <div className="animate-spin">
+                <div className="">
                     <Loader2 />
                 </div>
             </div>
@@ -34,7 +34,7 @@ const Allusers = () => {
         return <div>{error}</div>;
     }
     return (
-        <div className="w-screen min-h-screen bg-slate-300 animate-bounce">
+        <div className="w-screen min-h-screen bg-slate-300">
             <p className="text-3xl text-center py-5">ALL USERS</p>
             <p className="text-2xl text-center text-blue-500 mb-5">Total users: {users.length}</p>
             <div className="w-full flex justify-center items-center animate-spin">
