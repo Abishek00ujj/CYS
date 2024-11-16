@@ -29,12 +29,12 @@ const Login = () => {
     <>
     <ToastContainer/>
     <div className='w-screen h-screen bg-black flex justify-center items-center'>
-          <div className='w-[400px] h-[400px] bg-blue-400 rounded-3xl'>
-            <div className='w-full flex justify-center items-center font-mono text-3xl m-1'>LOGIN</div>
+          <div className='w-[400px] h-[380px] bg-blue-600 rounded-3xl'>
+            <p className='text-center font-bold text-3xl pt-6'>LOGIN</p>
             <div className='w-full h-full flex flex-col justify-center items-center'>
                 <input ref={emailref} type="" name="" id="" className='w-[80%] p-5 rounded-2xl border border-black m-5' placeholder='EMAIL'/>
                 <input ref={passwordref}type="text" name="" id="" className='w-[80%] p-5 rounded-2xl border border-black m-5' placeholder='PASSWORD'/>
-                <button className='bg-yellow-300 p-5 rounded-2xl' onClick={HandleLogin}>LOGIN</button>
+                <button className='bg-yellow-300 pl-5 pr-5 pt-4 pb-4 mb-4 rounded-2xl' onClick={HandleLogin}>LOGIN</button>
             </div>
           </div>
     </div>
