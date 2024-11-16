@@ -34,10 +34,10 @@ const Allusers = () => {
         return <div>{error}</div>;
     }
     return (
-        <div className="w-screen min-h-screen bg-slate-300">
+        <div className="w-screen min-h-screen bg-slate-300 animate-bounce">
             <p className="text-3xl text-center py-5">ALL USERS</p>
             <p className="text-2xl text-center text-blue-500 mb-5">Total users: {users.length}</p>
-            <div className="w-full flex justify-center items-center">
+            <div className="w-full flex justify-center items-center animate-spin">
                 <table className="w-3/4 border border-black bg-white">
                     <thead>
                         <tr className="border border-black bg-gray-200">
