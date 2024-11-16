@@ -30,10 +30,10 @@ const unknownList = () => {
         return <div>{error}</div>;
     }
     return (
-        <div className='w-screen h-screen bg-slate-300'>
+        <div className='w-screen h-auto bg-slate-300'>
             <p className='text-3xl text-center p-5 text-red-400'>INVALID USERS LIST</p>
             <p className='text-2xl text-red-400'>Total users: {users.length}</p>
-        <div className='w-screen h-screen flex justify-center items-center'>
+        <div className='w-screen h-auto flex justify-center items-center'>
             <div className=''>
                 <table className=''>
                     <thead>
