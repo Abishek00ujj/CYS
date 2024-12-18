@@ -27,21 +27,21 @@ const Dashboard = () => {
                                     <h3 className="text-lg font-medium">React for Beginners</h3>
                                     <p className="text-sm text-gray-600">Module 1: Introduction to React</p>
                                 </div>
-                                <button className="bg-blue-600 text-white px-4 py-2 rounded-md">Continue</button>
+                               <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/?utm_source=bing&utm_medium=udemyads&utm_campaign=BG-Search_Keyword_Alpha_Prof_la.EN_cc.India&campaigntype=Search&portfolio=Bing-India&language=EN&product=Course&test=&audience=Keyword&topic=React_JS&priority=Alpha&utm_content=deal4584&utm_term=_._ag_1324913899912283_._ad__._kw_react+tutorial+for+beginners_._de_c_._dm__._pl__._ti_kwd-82808243944821%3Aloc-90_._li_149915_._pd__._&matchtype=e&msclkid=d66c7d6fbedd1dc96d6c1a0df9f32c10&couponCode=IND21PM" target="_blank"><button className="bg-blue-600 text-white px-4 py-2 rounded-md">Continue</button></a> 
                             </div>
                             <div className="flex justify-between items-center">
                                 <div>
                                     <h3 className="text-lg font-medium">Advanced JavaScript</h3>
                                     <p className="text-sm text-gray-600">Module 3: Asynchronous JS</p>
                                 </div>
-                                <button className="bg-blue-600 text-white px-4 py-2 rounded-md">Continue</button>
+                               <a href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/?utm_source=bing&utm_medium=udemyads&utm_campaign=BG-Search_Keyword_Alpha_Prof_la.EN_cc.India&campaigntype=Search&portfolio=Bing-India&language=EN&product=Course&test=&audience=Keyword&topic=JavaScript&priority=Alpha&utm_content=deal4584&utm_term=_._ag_1318316830212117_._ad__._kw_JavaScript+advanced+Tutorial_._de_c_._dm__._pl__._ti_kwd-82395923992382%3Aloc-90_._li_149915_._pd__._&matchtype=e&msclkid=239f5e9a83ce134f976739f8cbd2cf6d&couponCode=IND21PM" target="_blank"><button className="bg-blue-600 text-white px-4 py-2 rounded-md">Continue</button></a> 
                             </div>
                             <div className="flex justify-between items-center">
                                 <div>
                                     <h3 className="text-lg font-medium">Web Development Mastery</h3>
                                     <p className="text-sm text-gray-600">Module 5: Full-Stack Project</p>
                                 </div>
-                                <button className="bg-blue-600 text-white px-4 py-2 rounded-md">Continue</button>
+                               <a href="https://www.onlineu.com/degrees/masters-web-design" target="_blank"><button className="bg-blue-600 text-white px-4 py-2 rounded-md">Continue</button></a>
                             </div>
                         </div>
                     </div>
