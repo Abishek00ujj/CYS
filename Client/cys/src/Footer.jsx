@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <>
     <div className='w-screen bg-black p-5 '>

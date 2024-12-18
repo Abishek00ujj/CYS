@@ -1,9 +1,11 @@
 import axios from 'axios';
-import React, { useRef } from 'react'
+import React, { useRef,useState } from 'react'
 import Footer from './Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Navigate } from 'react-router-dom';
 const Login = () => {
+  const [redirect,setredirect]=useState(false);
     const notify=(message)=>toast.success(message);
     const emailref=useRef(null);
     const passwordref=useRef(null);
@@ -19,6 +21,7 @@ const Login = () => {
         const res=await axios.post("https://cys.onrender.com/api/v1/login",{email:obj.email,password:obj.password});
         const notify=(message)=>toast.success(message);
         notify(res.data.message);
+        setredirect(true);
       }
       catch(err)
       {
@@ -26,6 +29,10 @@ const Login = () => {
         notify("Invalid credentials!");
       }
     }
+     if(redirect)
+        {
+            return <Navigate to={"/dashboard"}/>
+        }
   return (
     <>
     <ToastContainer/>

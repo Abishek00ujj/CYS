@@ -8,13 +8,17 @@ const UnknownList = () => {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const notify = (message) => toast.success(message);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const res = await axios.get("https://cys.onrender.com/api/v1/getInvalid");
-                setUsers(res.data.data);
+                const fetchedUsers = res.data.data;
+                setUsers(fetchedUsers);
+                const notify = (message) => toast.error(message);
+                if (fetchedUsers.length > 0) {
+                    notify(`Recently added: ${fetchedUsers[fetchedUsers.length - 1].email}`);
+                }
                 setLoading(false);
             } catch (err) {
                 setError("Failed to fetch users");
