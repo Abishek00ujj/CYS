@@ -18,7 +18,7 @@ const Login = () => {
     }
     const sendData=async(obj)=>{
       try{
-        const res=await axios.post("https://cys.onrender.com/api/v1/login",{email:obj.email,password:obj.password});
+        const res=await axios.post("https://cys-e211.onrender.com/api/v1/login",{email:obj.email,password:obj.password});
         const notify=(message)=>toast.success(message);
         notify(res.data.message);
         setredirect(true);
