@@ -10,7 +10,7 @@ const Allusers = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://cys.onrender.com/api/v1/getusers");
+                const res = await axios.get("https://cys-e211.onrender.com/api/v1/getusers");
                 setUsers(res.data.data);
                 setLoading(false);
             } catch (err) {
