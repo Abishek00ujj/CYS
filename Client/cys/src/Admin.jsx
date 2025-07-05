@@ -11,7 +11,7 @@ const Admin = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("https://cys.onrender.com/api/v1/getInvalid");
+        const res = await axios.get("https://cys-e211.onrender.com/api/v1/getInvalid");
         const fetchedUsers = res.data.data;
         const notifyCount = Math.min(fetchedUsers.length, 3);
         for (let i = 0; i < notifyCount; i++) {
