@@ -12,7 +12,7 @@ const UnknownList = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://cys.onrender.com/api/v1/getInvalid");
+                const res = await axios.get("https://cys-e211.onrender.com/api/v1/getInvalid");
                 const fetchedUsers = res.data.data;
                 setUsers(fetchedUsers);
                 const notify = (message) => toast.error(message);
